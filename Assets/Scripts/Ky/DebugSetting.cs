@@ -6,6 +6,8 @@ using UnityEngine;
 [Serializable]
 public class DebugSetting
 {
+    // Recommended usage:
+    // [ShowInInspector, HideReferenceObjectPicker] public static DebugSetting disableEnemySpawn = new("disableEnemySpawn");
     [NonSerialized] public string keyRaw;
 
     [ShowInInspector, ToggleLeft]
