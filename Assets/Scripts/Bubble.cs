@@ -31,7 +31,6 @@ public class Bubble : MonoBehaviour, IShootable
         
         foreach (Collider2D collider in overlapCircleAll)
         {
-            Debug.Log(collider);
             if (collider.TryGetComponent(out Enemy enemy))
             {
                 enemy.BlowUp();
