@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8992481407023351699}
   - component: {fileID: 2507694288582376909}
   m_Layer: 0
-  m_Name: Elips 1
+  m_Name: Elips 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,9 +164,9 @@ GameObject:
   - component: {fileID: 5786603031784295899}
   - component: {fileID: 7412746192943699726}
   - component: {fileID: 3054526087829696611}
-  - component: {fileID: 194704080397494645}
-  - component: {fileID: 4032100885301775120}
-  - component: {fileID: 8722694577736695829}
+  - component: {fileID: 2532687580937811251}
+  - component: {fileID: 819692515779967008}
+  - component: {fileID: 34483833379950860}
   m_Layer: 0
   m_Name: bone_2
   m_TagString: Untagged
@@ -221,9 +221,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &3054526087829696611
 Rigidbody2D:
   serializedVersion: 4
@@ -236,7 +236,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -251,7 +251,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &194704080397494645
+--- !u!231 &2532687580937811251
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,12 +267,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.07939009, y: -0.344362}
+  m_ConnectedAnchor: {x: 0.07939023, y: -0.34436232}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &4032100885301775120
+--- !u!231 &819692515779967008
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,12 +288,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.12763111, y: 0.46494448}
+  m_ConnectedAnchor: {x: 0.12763104, y: 0.46494418}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &8722694577736695829
+--- !u!231 &34483833379950860
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -309,7 +309,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5931339, y: 0.0470454}
+  m_ConnectedAnchor: {x: 1.5931339, y: 0.047045756}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -325,9 +325,9 @@ GameObject:
   - component: {fileID: 4920368722421925273}
   - component: {fileID: 3249489319174927266}
   - component: {fileID: 2508197230122553196}
-  - component: {fileID: 6033547990050004250}
-  - component: {fileID: 1986912001394449215}
-  - component: {fileID: 2566943709980549072}
+  - component: {fileID: 3149685112229817704}
+  - component: {fileID: 7614147685751275544}
+  - component: {fileID: 598766356510843544}
   m_Layer: 0
   m_Name: bone_10
   m_TagString: Untagged
@@ -382,9 +382,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &2508197230122553196
 Rigidbody2D:
   serializedVersion: 4
@@ -397,7 +397,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -412,7 +412,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &6033547990050004250
+--- !u!231 &3149685112229817704
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,12 +428,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.0853557, y: -0.36214647}
+  m_ConnectedAnchor: {x: 0.08535582, y: -0.36214668}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &1986912001394449215
+--- !u!231 &7614147685751275544
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -449,12 +449,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.09707353, y: 0.31052116}
+  m_ConnectedAnchor: {x: 0.09707333, y: 0.310521}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &2566943709980549072
+--- !u!231 &598766356510843544
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,7 +470,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5696985, y: 0.037490867}
+  m_ConnectedAnchor: {x: 1.5696983, y: 0.037490975}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -486,9 +486,9 @@ GameObject:
   - component: {fileID: 8713101733556053885}
   - component: {fileID: 6013042789071027210}
   - component: {fileID: 3437128819777261483}
-  - component: {fileID: 9146771741852869494}
-  - component: {fileID: 1351491783004075192}
-  - component: {fileID: 4205644959882790112}
+  - component: {fileID: 1576612595829569321}
+  - component: {fileID: 3345047267785509236}
+  - component: {fileID: 8523004802698313960}
   m_Layer: 0
   m_Name: bone_3
   m_TagString: Untagged
@@ -543,9 +543,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &3437128819777261483
 Rigidbody2D:
   serializedVersion: 4
@@ -558,7 +558,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -573,7 +573,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &9146771741852869494
+--- !u!231 &1576612595829569321
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -589,12 +589,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.123219505, y: -0.36193508}
+  m_ConnectedAnchor: {x: 0.12321938, y: -0.36193496}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &1351491783004075192
+--- !u!231 &3345047267785509236
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -610,12 +610,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.08935556, y: 0.34191182}
+  m_ConnectedAnchor: {x: 0.0893556, y: 0.34191218}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &4205644959882790112
+--- !u!231 &8523004802698313960
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -631,7 +631,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.573394, y: 0.04159212}
+  m_ConnectedAnchor: {x: 1.5733937, y: 0.041592002}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -647,9 +647,9 @@ GameObject:
   - component: {fileID: 9082265189236880666}
   - component: {fileID: 2450067628940830665}
   - component: {fileID: 6492493711590131753}
-  - component: {fileID: 7265766643917307026}
-  - component: {fileID: 468504849696013401}
-  - component: {fileID: 8662653785929398272}
+  - component: {fileID: 7107878179087417346}
+  - component: {fileID: 4293038374246119293}
+  - component: {fileID: 2911537500832468848}
   m_Layer: 0
   m_Name: bone_4
   m_TagString: Untagged
@@ -704,9 +704,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &6492493711590131753
 Rigidbody2D:
   serializedVersion: 4
@@ -719,7 +719,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -734,7 +734,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &7265766643917307026
+--- !u!231 &7107878179087417346
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -750,12 +750,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.1252335, y: -0.3584453}
+  m_ConnectedAnchor: {x: 0.12523362, y: -0.35844523}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &468504849696013401
+--- !u!231 &4293038374246119293
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -771,12 +771,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.07070054, y: 0.37574124}
+  m_ConnectedAnchor: {x: 0.0707006, y: 0.37574106}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &8662653785929398272
+--- !u!231 &2911537500832468848
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -792,7 +792,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5698161, y: 0.032229867}
+  m_ConnectedAnchor: {x: 1.569816, y: 0.03222998}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -808,9 +808,9 @@ GameObject:
   - component: {fileID: 6874343239359248469}
   - component: {fileID: 4369499180689677142}
   - component: {fileID: 714457356894040901}
-  - component: {fileID: 4260908512640264079}
-  - component: {fileID: 6012650256996160236}
-  - component: {fileID: 6031379792622564881}
+  - component: {fileID: 1246134499479923464}
+  - component: {fileID: 7391566668551564433}
+  - component: {fileID: 4928278695150761139}
   m_Layer: 0
   m_Name: bone_11
   m_TagString: Untagged
@@ -865,9 +865,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &714457356894040901
 Rigidbody2D:
   serializedVersion: 4
@@ -880,7 +880,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -895,7 +895,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &4260908512640264079
+--- !u!231 &1246134499479923464
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -911,12 +911,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.087501064, y: -0.413962}
+  m_ConnectedAnchor: {x: 0.08750111, y: -0.41396177}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &6012650256996160236
+--- !u!231 &7391566668551564433
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -932,12 +932,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.09148308, y: 0.36064735}
+  m_ConnectedAnchor: {x: 0.091483064, y: 0.3606476}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &6031379792622564881
+--- !u!231 &4928278695150761139
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -953,7 +953,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.591534, y: 0.020090401}
+  m_ConnectedAnchor: {x: 1.591534, y: 0.020090282}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -969,9 +969,9 @@ GameObject:
   - component: {fileID: 3237968699671791705}
   - component: {fileID: 3461287384898860561}
   - component: {fileID: 1229101820697207162}
-  - component: {fileID: 7375591457322081999}
-  - component: {fileID: 1979124783700402880}
-  - component: {fileID: 9128609815947202495}
+  - component: {fileID: 8372637621153364285}
+  - component: {fileID: 826033946881304334}
+  - component: {fileID: 8080388387803918917}
   m_Layer: 0
   m_Name: bone_12
   m_TagString: Untagged
@@ -1026,9 +1026,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &1229101820697207162
 Rigidbody2D:
   serializedVersion: 4
@@ -1041,7 +1041,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1056,7 +1056,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &7375591457322081999
+--- !u!231 &8372637621153364285
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1072,12 +1072,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.050597228, y: -0.37036747}
+  m_ConnectedAnchor: {x: 0.050597284, y: -0.37036777}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &1979124783700402880
+--- !u!231 &826033946881304334
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1093,12 +1093,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.10211298, y: 0.4106019}
+  m_ConnectedAnchor: {x: 0.10211283, y: 0.41060168}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &9128609815947202495
+--- !u!231 &8080388387803918917
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1114,7 +1114,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5806934, y: -0.06414187}
+  m_ConnectedAnchor: {x: 1.5806936, y: -0.06414211}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -1130,9 +1130,9 @@ GameObject:
   - component: {fileID: 8613721022841771662}
   - component: {fileID: 5869242088832951816}
   - component: {fileID: 8716722142799308159}
-  - component: {fileID: 4422363544790886936}
-  - component: {fileID: 4574539240817719346}
-  - component: {fileID: 1927199038944204085}
+  - component: {fileID: 3669370746593337162}
+  - component: {fileID: 3081306276722137938}
+  - component: {fileID: 7440318964034034816}
   m_Layer: 0
   m_Name: bone_8
   m_TagString: Untagged
@@ -1187,9 +1187,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &8716722142799308159
 Rigidbody2D:
   serializedVersion: 4
@@ -1202,7 +1202,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1217,7 +1217,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &4422363544790886936
+--- !u!231 &3669370746593337162
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1233,12 +1233,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.084874436, y: -0.40490633}
+  m_ConnectedAnchor: {x: 0.08487426, y: -0.40490645}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &4574539240817719346
+--- !u!231 &3081306276722137938
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1254,12 +1254,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.18348385, y: 0.50907266}
+  m_ConnectedAnchor: {x: 0.18348393, y: 0.50907254}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &1927199038944204085
+--- !u!231 &7440318964034034816
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1275,7 +1275,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5930271, y: -0.050545633}
+  m_ConnectedAnchor: {x: 1.5930271, y: -0.050545275}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -1291,9 +1291,9 @@ GameObject:
   - component: {fileID: 53809391835550956}
   - component: {fileID: 3163236336462524778}
   - component: {fileID: 7880320426506382101}
-  - component: {fileID: 8116782226194869152}
-  - component: {fileID: 8328305012830560754}
-  - component: {fileID: 8826327036480330985}
+  - component: {fileID: 6907334661998110245}
+  - component: {fileID: 2601393478659994697}
+  - component: {fileID: 690067721984364854}
   m_Layer: 0
   m_Name: bone_9
   m_TagString: Untagged
@@ -1348,9 +1348,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &7880320426506382101
 Rigidbody2D:
   serializedVersion: 4
@@ -1363,7 +1363,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1378,7 +1378,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &8116782226194869152
+--- !u!231 &6907334661998110245
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1394,12 +1394,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.046451546, y: -0.32200763}
+  m_ConnectedAnchor: {x: 0.046451654, y: -0.3220074}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &8328305012830560754
+--- !u!231 &2601393478659994697
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1415,12 +1415,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.11387743, y: 0.39772436}
+  m_ConnectedAnchor: {x: 0.113877624, y: 0.3977244}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &8826327036480330985
+--- !u!231 &690067721984364854
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1436,7 +1436,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5728011, y: -0.059936434}
+  m_ConnectedAnchor: {x: 1.5728009, y: -0.059936553}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -1452,9 +1452,9 @@ GameObject:
   - component: {fileID: 6475087500752279322}
   - component: {fileID: 723701605599464138}
   - component: {fileID: 9214237129826007582}
-  - component: {fileID: 4554129762580477992}
-  - component: {fileID: 2322119395651693814}
-  - component: {fileID: 2624108138488212783}
+  - component: {fileID: 8328067119723059579}
+  - component: {fileID: 8510138808697070868}
+  - component: {fileID: 232419920817034866}
   m_Layer: 0
   m_Name: bone_5
   m_TagString: Untagged
@@ -1509,9 +1509,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &9214237129826007582
 Rigidbody2D:
   serializedVersion: 4
@@ -1524,7 +1524,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1539,7 +1539,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &4554129762580477992
+--- !u!231 &8328067119723059579
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1555,12 +1555,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.09193094, y: -0.4425673}
+  m_ConnectedAnchor: {x: 0.09193097, y: -0.44256774}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &2322119395651693814
+--- !u!231 &8510138808697070868
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1576,12 +1576,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.049887866, y: 0.37640074}
+  m_ConnectedAnchor: {x: 0.049887747, y: 0.37640074}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &2624108138488212783
+--- !u!231 &232419920817034866
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1597,7 +1597,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5913007, y: 0.03385347}
+  m_ConnectedAnchor: {x: 1.5913007, y: 0.033853352}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -1613,9 +1613,9 @@ GameObject:
   - component: {fileID: 7371866861394607946}
   - component: {fileID: 8575104229633916710}
   - component: {fileID: 2646104968004823665}
-  - component: {fileID: 2739422438214358944}
-  - component: {fileID: 2403361235148807185}
-  - component: {fileID: 5399229045119748511}
+  - component: {fileID: 7579846125837277992}
+  - component: {fileID: 533223175200426549}
+  - component: {fileID: 8515448239156300152}
   m_Layer: 0
   m_Name: bone_7
   m_TagString: Untagged
@@ -1670,9 +1670,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &2646104968004823665
 Rigidbody2D:
   serializedVersion: 4
@@ -1685,7 +1685,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1700,7 +1700,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &2739422438214358944
+--- !u!231 &7579846125837277992
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1716,12 +1716,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.17153089, y: -0.5132235}
+  m_ConnectedAnchor: {x: 0.17153077, y: -0.5132235}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &2403361235148807185
+--- !u!231 &533223175200426549
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1737,12 +1737,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.09391493, y: 0.4089139}
+  m_ConnectedAnchor: {x: 0.09391493, y: 0.40891367}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &5399229045119748511
+--- !u!231 &8515448239156300152
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1758,7 +1758,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5732539, y: -0.030062113}
+  m_ConnectedAnchor: {x: 1.5732541, y: -0.030062295}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -1774,9 +1774,9 @@ GameObject:
   - component: {fileID: 6639298583683295290}
   - component: {fileID: 3988392802324040519}
   - component: {fileID: 2501539174633053215}
-  - component: {fileID: 612499601262653022}
-  - component: {fileID: 1723981192069856325}
-  - component: {fileID: 1154838298446210512}
+  - component: {fileID: 7317209667750356428}
+  - component: {fileID: 9215015237594669953}
+  - component: {fileID: 3895299125079608546}
   m_Layer: 0
   m_Name: bone_6
   m_TagString: Untagged
@@ -1831,9 +1831,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &2501539174633053215
 Rigidbody2D:
   serializedVersion: 4
@@ -1846,7 +1846,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1861,7 +1861,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &612499601262653022
+--- !u!231 &7317209667750356428
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1877,12 +1877,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.13952683, y: -0.39568013}
+  m_ConnectedAnchor: {x: 0.13952671, y: -0.39567992}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &1723981192069856325
+--- !u!231 &9215015237594669953
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1898,12 +1898,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.13381489, y: 0.43175307}
+  m_ConnectedAnchor: {x: 0.13381504, y: 0.43175346}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &1154838298446210512
+--- !u!231 &3895299125079608546
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1919,7 +1919,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5762548, y: -0.13463527}
+  m_ConnectedAnchor: {x: 1.576255, y: -0.13463551}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
@@ -1935,9 +1935,9 @@ GameObject:
   - component: {fileID: 796463949286557520}
   - component: {fileID: 1130779900549815435}
   - component: {fileID: 5448874525558509088}
-  - component: {fileID: 2606141766830350186}
-  - component: {fileID: 8713383237990045472}
-  - component: {fileID: 5144661558759609831}
+  - component: {fileID: 4052708985428103876}
+  - component: {fileID: 4525864834425636181}
+  - component: {fileID: 3874023059169759484}
   m_Layer: 0
   m_Name: bone_1
   m_TagString: Untagged
@@ -1992,9 +1992,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.12
 --- !u!50 &5448874525558509088
 Rigidbody2D:
   serializedVersion: 4
@@ -2007,7 +2007,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 0.5
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -2022,7 +2022,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!231 &2606141766830350186
+--- !u!231 &4052708985428103876
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2038,12 +2038,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.17712277, y: -0.4484314}
+  m_ConnectedAnchor: {x: 0.17712265, y: -0.4484311}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &8713383237990045472
+--- !u!231 &4525864834425636181
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2059,12 +2059,12 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.15813851, y: 0.33870992}
+  m_ConnectedAnchor: {x: 0.15813863, y: 0.3387102}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
   m_Frequency: 20
---- !u!231 &5144661558759609831
+--- !u!231 &3874023059169759484
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2080,7 +2080,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5732937, y: 0.027901204}
+  m_ConnectedAnchor: {x: 1.5732939, y: 0.027901033}
   m_AutoConfigureDistance: 0
   m_Distance: 0.05
   m_DampingRatio: 1
