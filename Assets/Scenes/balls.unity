@@ -2495,7 +2495,7 @@ GameObject:
   - component: {fileID: 2014070154}
   - component: {fileID: 2014070160}
   - component: {fileID: 2014070159}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2617,6 +2617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2014070160}
+  RotationSpeed: 10
 --- !u!50 &2014070160
 Rigidbody2D:
   serializedVersion: 4
