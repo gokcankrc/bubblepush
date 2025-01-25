@@ -1,11 +1,13 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class BonesSpringWebMaker : MonoBehaviour
 {
     // not the kind of joint you think
-    public GameObject[] joints;
+    private GameObject[] joints;
     [SerializeField] private float rbMass;
     [SerializeField] private PhysicsMaterial2D rbPhysMat;
     [SerializeField] private SpringSettings neighborSpringSettings;
@@ -14,6 +16,7 @@ public class BonesSpringWebMaker : MonoBehaviour
     [Button]
     private void AddRigidbodies()
     {
+        joints = transform.Cast<Transform>().Select(x => x.gameObject).ToArray();
         int count = joints.Length;
 
         for (int i = 0; i < count; i++)
@@ -30,6 +33,7 @@ public class BonesSpringWebMaker : MonoBehaviour
     [Button]
     private void AddCircleColliders()
     {
+        joints = transform.Cast<Transform>().Select(x => x.gameObject).ToArray();
         int count = joints.Length;
 
         for (int i = 0; i < count; i++)
@@ -43,6 +47,7 @@ public class BonesSpringWebMaker : MonoBehaviour
     [Button]
     private void ConnectSprings()
     {
+        joints = transform.Cast<Transform>().Select(x => x.gameObject).ToArray();
         int count = joints.Length;
 
         for (int i = 0; i < count; i++)
