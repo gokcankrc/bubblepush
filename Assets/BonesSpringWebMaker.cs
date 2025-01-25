@@ -19,8 +19,8 @@ public class BonesSpringWebMaker : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             GameObject current = joints[i];
-            if (current.TryGetComponent(out Rigidbody2D rb)) continue;
-            rb = current.AddComponent<Rigidbody2D>();
+            if (!current.TryGetComponent(out Rigidbody2D rb))
+                rb = current.AddComponent<Rigidbody2D>();
             rb.mass = rbMass;
             rb.sharedMaterial = rbPhysMat;
             rb.gravityScale = 0;
@@ -35,8 +35,8 @@ public class BonesSpringWebMaker : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             GameObject current = joints[i];
-            if (current.TryGetComponent(out CircleCollider2D cc2d)) continue;
-            cc2d = current.AddComponent<CircleCollider2D>();
+            if (!current.TryGetComponent(out CircleCollider2D cc2d))
+                cc2d = current.AddComponent<CircleCollider2D>();
         }
     }
 
