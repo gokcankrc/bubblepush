@@ -7,6 +7,6 @@ public class PopThatBubble : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log($"DEATH by {other.name}, {other.gameObject.layer}");
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }
