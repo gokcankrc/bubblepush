@@ -16,7 +16,7 @@ public class FollowMouse : MonoBehaviour
         previousMousePosition = Camera.main.ScreenToWorldPoint(screenPosition);;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         Vector3 screenPosition = Input.mousePosition;
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
