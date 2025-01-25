@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DebugManager : MonoBehaviour
 {
     [SerializeField] private KeyCode restartSceneKey = KeyCode.F5;
+    [SerializeField] private KeyCode stopTimeKey = KeyCode.B;
 
     private void Update()
     {
@@ -13,5 +12,12 @@ public class DebugManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(stopTimeKey))
+        {
+            Time.timeScale = (1f - Time.timeScale);
+        }
+#endif
     }
 }
