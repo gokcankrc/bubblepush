@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Enemies
@@ -12,6 +13,14 @@ namespace Enemies
 
         public GameplayManager GameplayManager { get; private set; }
 
+        private void OnCollisionEnter(Collision other)
+        {
+            Debug.Log(other);
+            if (other.collider.TryGetComponent(out IShootable shootable))
+            {
+                shootable.Shot(null, Shooter);
+            }
+        }
 
         private void Start()
         {
@@ -27,7 +36,6 @@ namespace Enemies
             
             var target = TargetSelector.GetTarget();
             
-            Debug.Log($"Shoot Target: {target}");
             Shooter.Shoot(target);
             LastShootTime = Time.time;
         }
