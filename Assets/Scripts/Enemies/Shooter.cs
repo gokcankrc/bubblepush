@@ -12,7 +12,6 @@ namespace Enemies
 
         public void Shoot(Vector3 direction, Vector3 position)
         {
-            ShootPosition.localPosition = direction * ShootPositionDistance;
 
             var projectile = Instantiate(ProjectilePrefab, position, Quaternion.identity);
 
@@ -28,7 +27,11 @@ namespace Enemies
         public void Shoot(Transform target)
         {
             var targetVector = target.position - ShootPosition.position;
-            Shoot(targetVector.normalized, ShootPosition.position);
+
+            var direction = targetVector.normalized;
+            ShootPosition.localPosition = direction * ShootPositionDistance;
+
+            Shoot(direction, ShootPosition.position);
         }
 
     
