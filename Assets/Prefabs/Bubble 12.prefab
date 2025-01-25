@@ -121,7 +121,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.83
 --- !u!1 &4470747680173889003
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +245,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 723701605599464138, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 723701605599464138, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 796463949286557520, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -265,7 +269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1130779900549815435, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130779900549815435, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 1154838298446210512, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -349,7 +357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2450067628940830665, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450067628940830665, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 2501539174633053215, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Mass
@@ -368,16 +380,20 @@ PrefabInstance:
       value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2507694288582376909, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: neighborSpringSettings.dist
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507694288582376909, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: oppositeSpringSettings.damp
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2507694288582376909, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: oppositeSpringSettings.dist
-      value: 0.1
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 2507694288582376909, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: oppositeSpringSettings.freq
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2507694288582376909, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: neighborSpringSettings.breakForce
@@ -481,7 +497,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3163236336462524778, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163236336462524778, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 3237968699671791705, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -501,7 +521,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3249489319174927266, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249489319174927266, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 3437128819777261483, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Mass
@@ -513,11 +537,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3461287384898860561, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461287384898860561, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 3988392802324040519, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988392802324040519, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 4032100885301775120, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -549,7 +581,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4369499180689677142, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369499180689677142, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 4422363544790886936, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -633,7 +669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5869242088832951816, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869242088832951816, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 5880309234632660874, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Layer
@@ -649,7 +689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013042789071027210, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013042789071027210, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 6031379792622564881, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -761,7 +805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7412746192943699726, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412746192943699726, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 7880320426506382101, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Mass
@@ -789,7 +837,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8575104229633916710, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8575104229633916710, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 8613721022841771662, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -949,119 +1001,119 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8683025111895692003, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6971037739732265049}
+      addedObject: {fileID: 3284996710634735744}
     - targetCorrespondingSourceObject: {fileID: 8683025111895692003, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5343990494073896868}
+      addedObject: {fileID: 3684226843092532407}
     - targetCorrespondingSourceObject: {fileID: 8683025111895692003, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8842749753133083299}
+      addedObject: {fileID: 2795576573554450308}
     - targetCorrespondingSourceObject: {fileID: 410629865698111064, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3917347137375507591}
+      addedObject: {fileID: 4179798078356634439}
     - targetCorrespondingSourceObject: {fileID: 410629865698111064, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3299480518111319460}
+      addedObject: {fileID: 1507641210689436503}
     - targetCorrespondingSourceObject: {fileID: 410629865698111064, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2227502216238145280}
+      addedObject: {fileID: 5536388628241525313}
     - targetCorrespondingSourceObject: {fileID: 1279947072501561611, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4760971766331885195}
+      addedObject: {fileID: 2413329978716283183}
     - targetCorrespondingSourceObject: {fileID: 1279947072501561611, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1635300742767796629}
+      addedObject: {fileID: 3368641504362458413}
     - targetCorrespondingSourceObject: {fileID: 1279947072501561611, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5849342074196777232}
+      addedObject: {fileID: 8965979535761456729}
     - targetCorrespondingSourceObject: {fileID: 1350239299341251413, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1017041292826250805}
+      addedObject: {fileID: 2024541029031533565}
     - targetCorrespondingSourceObject: {fileID: 1350239299341251413, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7856948492015493102}
+      addedObject: {fileID: 8406605413620032175}
     - targetCorrespondingSourceObject: {fileID: 1350239299341251413, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7596393855140681032}
+      addedObject: {fileID: 4438422100088531487}
     - targetCorrespondingSourceObject: {fileID: 5880309234632660874, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1970728018050167450}
+      addedObject: {fileID: 8723885899039251030}
     - targetCorrespondingSourceObject: {fileID: 5880309234632660874, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6875101116235181626}
+      addedObject: {fileID: 8587073100121170005}
     - targetCorrespondingSourceObject: {fileID: 5880309234632660874, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4929804311741700627}
+      addedObject: {fileID: 8334827026351813004}
     - targetCorrespondingSourceObject: {fileID: 6591370428100750702, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7553056353302191266}
+      addedObject: {fileID: 7370872172120037348}
     - targetCorrespondingSourceObject: {fileID: 6591370428100750702, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6781741784638800618}
+      addedObject: {fileID: 687952916874494756}
     - targetCorrespondingSourceObject: {fileID: 6591370428100750702, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3000513993106562702}
+      addedObject: {fileID: 4813810350478676296}
     - targetCorrespondingSourceObject: {fileID: 6439392148855143830, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8983112488613390043}
+      addedObject: {fileID: 4415852095578734651}
     - targetCorrespondingSourceObject: {fileID: 6439392148855143830, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 829922087776736941}
+      addedObject: {fileID: 281166060606131503}
     - targetCorrespondingSourceObject: {fileID: 6439392148855143830, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5639303207681079438}
+      addedObject: {fileID: 2482790138605882199}
     - targetCorrespondingSourceObject: {fileID: 2327855261688968996, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3669576022038200509}
+      addedObject: {fileID: 3681730100084570941}
     - targetCorrespondingSourceObject: {fileID: 2327855261688968996, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9032507463599122371}
+      addedObject: {fileID: 8158067312722346877}
     - targetCorrespondingSourceObject: {fileID: 2327855261688968996, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6576925096454334586}
+      addedObject: {fileID: 1652968306996652698}
     - targetCorrespondingSourceObject: {fileID: 4055724589735755862, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5342863850887287077}
+      addedObject: {fileID: 1209233729754097572}
     - targetCorrespondingSourceObject: {fileID: 4055724589735755862, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3399229366403416190}
+      addedObject: {fileID: 3613287227795526194}
     - targetCorrespondingSourceObject: {fileID: 4055724589735755862, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2962661228438761487}
+      addedObject: {fileID: 2616783011184327073}
     - targetCorrespondingSourceObject: {fileID: 851220532921676000, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8242245370810758908}
+      addedObject: {fileID: 6779748141100760113}
     - targetCorrespondingSourceObject: {fileID: 851220532921676000, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1473354830364235936}
+      addedObject: {fileID: 2409180105761567543}
     - targetCorrespondingSourceObject: {fileID: 851220532921676000, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2001322294792477204}
+      addedObject: {fileID: 6462563031351410854}
     - targetCorrespondingSourceObject: {fileID: 1785478787884865086, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 656059453290422595}
+      addedObject: {fileID: 7383331167541271014}
     - targetCorrespondingSourceObject: {fileID: 1785478787884865086, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7099201643305100406}
+      addedObject: {fileID: 2901360126475835127}
     - targetCorrespondingSourceObject: {fileID: 1785478787884865086, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6161102025936789996}
+      addedObject: {fileID: 7517052163378141912}
     - targetCorrespondingSourceObject: {fileID: 2263865705902257018, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1826265271358150559}
+      addedObject: {fileID: 2402508828858082174}
     - targetCorrespondingSourceObject: {fileID: 2263865705902257018, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5526576678118898126}
+      addedObject: {fileID: 7358122434739904991}
     - targetCorrespondingSourceObject: {fileID: 2263865705902257018, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8298008469867172072}
+      addedObject: {fileID: 730719792267678574}
   m_SourcePrefab: {fileID: 100100000, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
 --- !u!1 &938591826628900463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4055724589735755862, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &5342863850887287077
+--- !u!231 &1209233729754097572
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1079,10 +1131,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179396, y: -0.4}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &3399229366403416190
+--- !u!231 &3613287227795526194
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1100,10 +1152,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179254, y: 0.40000004}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &2962661228438761487
+--- !u!231 &2616783011184327073
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1121,9 +1173,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.6000001, y: 0}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!50 &1294365151236611144 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 2646104968004823665, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
@@ -1134,7 +1186,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2327855261688968996, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &3669576022038200509
+--- !u!231 &3681730100084570941
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1152,10 +1204,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.1071801, y: -0.3999998}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &9032507463599122371
+--- !u!231 &8158067312722346877
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1173,10 +1225,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10718012, y: 0.39999986}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &6576925096454334586
+--- !u!231 &1652968306996652698
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1194,9 +1246,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5999998, y: -0.0000001192093}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!50 &1693547361178646869 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 2508197230122553196, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
@@ -1232,7 +1284,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1279947072501561611, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &4760971766331885195
+--- !u!231 &2413329978716283183
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1250,10 +1302,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179604, y: -0.4}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &1635300742767796629
+--- !u!231 &3368641504362458413
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1271,10 +1323,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179366, y: 0.3999999}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &5849342074196777232
+--- !u!231 &8965979535761456729
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1292,15 +1344,15 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.6000004, y: 0.00000017881393}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!1 &2878744850923603308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1350239299341251413, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &1017041292826250805
+--- !u!231 &2024541029031533565
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1318,10 +1370,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717974, y: -0.4000001}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &7856948492015493102
+--- !u!231 &8406605413620032175
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1339,10 +1391,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717977, y: 0.4}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &7596393855140681032
+--- !u!231 &4438422100088531487
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1360,15 +1412,15 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5999995, y: 0.0000000699382}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!1 &3036698905937347907 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2263865705902257018, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &1826265271358150559
+--- !u!231 &2402508828858082174
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1386,10 +1438,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717958, y: -0.3999999}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &5526576678118898126
+--- !u!231 &7358122434739904991
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1407,10 +1459,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717991, y: 0.40000027}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &8298008469867172072
+--- !u!231 &730719792267678574
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1428,15 +1480,15 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5999999, y: -0.000000059604645}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!1 &3281174912216588295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1785478787884865086, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &656059453290422595
+--- !u!231 &7383331167541271014
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1454,10 +1506,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179604, y: -0.40000042}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &7099201643305100406
+--- !u!231 &2901360126475835127
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1475,10 +1527,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179366, y: 0.4}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &6161102025936789996
+--- !u!231 &7517052163378141912
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1496,15 +1548,15 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.6000004, y: -0.00000017881393}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!1 &3529839016794036321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 410629865698111064, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &3917347137375507591
+--- !u!231 &4179798078356634439
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1522,10 +1574,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717982, y: -0.39999968}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &3299480518111319460
+--- !u!231 &1507641210689436503
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1543,10 +1595,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10718018, y: 0.39999995}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &2227502216238145280
+--- !u!231 &5536388628241525313
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1564,9 +1616,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5999995, y: -0.00000017881393}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!50 &4369647654458475900 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 714457356894040901, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
@@ -1577,7 +1629,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 851220532921676000, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &8242245370810758908
+--- !u!231 &6779748141100760113
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1595,10 +1647,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717998, y: -0.3999999}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &1473354830364235936
+--- !u!231 &2409180105761567543
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1616,10 +1668,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717994, y: 0.39999998}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &2001322294792477204
+--- !u!231 &6462563031351410854
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1637,9 +1689,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5999995, y: -0.0000000699382}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!50 &5373308463545240615 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 9214237129826007582, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
@@ -1655,7 +1707,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8683025111895692003, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &6971037739732265049
+--- !u!231 &3284996710634735744
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1673,10 +1725,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717932, y: -0.4000002}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &5343990494073896868
+--- !u!231 &3684226843092532407
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1694,10 +1746,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717967, y: 0.3999999}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &8842749753133083299
+--- !u!231 &2795576573554450308
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1715,9 +1767,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.6000004, y: -0.00000011920929}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!50 &6346378782070431020 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7880320426506382101, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
@@ -1728,7 +1780,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5880309234632660874, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &1970728018050167450
+--- !u!231 &8723885899039251030
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1746,10 +1798,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10717943, y: -0.39999974}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &6875101116235181626
+--- !u!231 &8587073100121170005
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1767,10 +1819,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179634, y: 0.4}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &4929804311741700627
+--- !u!231 &8334827026351813004
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1788,15 +1840,15 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.6000001, y: 0}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!1 &7787578382958169007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6439392148855143830, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &8983112488613390043
+--- !u!231 &4415852095578734651
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1814,10 +1866,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179224, y: -0.4000001}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &829922087776736941
+--- !u!231 &281166060606131503
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1835,10 +1887,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.1071794, y: 0.4000004}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &5639303207681079438
+--- !u!231 &2482790138605882199
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1856,15 +1908,15 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.6000004, y: -0.00000036080263}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!1 &7941843092338711383 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6591370428100750702, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
   m_PrefabInstance: {fileID: 3841104622769452601}
   m_PrefabAsset: {fileID: 0}
---- !u!231 &7553056353302191266
+--- !u!231 &7370872172120037348
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1882,10 +1934,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.10718012, y: -0.4000002}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &6781741784638800618
+--- !u!231 &687952916874494756
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1903,10 +1955,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.107179776, y: 0.39999962}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.05
+  m_Distance: 0.005
   m_DampingRatio: 0.3
   m_Frequency: 20
---- !u!231 &3000513993106562702
+--- !u!231 &4813810350478676296
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1924,9 +1976,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.6, y: -0.0000001192093}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 0.005
+  m_DampingRatio: 0.3
+  m_Frequency: 20
 --- !u!50 &8023058198275636752 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 6492493711590131753, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
