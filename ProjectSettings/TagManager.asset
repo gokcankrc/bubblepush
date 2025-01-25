@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: grass
+    uniqueID: 3550217741
+    locked: 0
