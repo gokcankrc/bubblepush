@@ -5,11 +5,7 @@ public class PopThatBubble : MonoBehaviour
 {
     public Transform rigidbodyParent;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log($"DEATH by {other.name}, {other.gameObject.layer}");
-        PopTheBubble();
-    }
+ 
 
     public void PopTheBubble()
     {

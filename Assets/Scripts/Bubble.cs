@@ -21,13 +21,22 @@ public class Bubble : MonoBehaviour, IShootable
     {
         GameplayManager.RemoveBubble(this);
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log($"DEATH by {other.name}, {other.gameObject.layer}");
+        Pop();
+    }
 
     public void Shot(Projectile projectile, Shooter source)
     {
-        
+        Pop();
+    }
+
+    private void Pop()
+    {
         var overlapCircleAll = Physics2D.OverlapCircleAll(transform.position, DamageRange);
 
-        
         
         foreach (Collider2D collider in overlapCircleAll)
         {
@@ -39,7 +48,6 @@ public class Bubble : MonoBehaviour, IShootable
         
         
         PopThatBubble.PopTheBubble();
-
     }
 
     private void OnDrawGizmos()
