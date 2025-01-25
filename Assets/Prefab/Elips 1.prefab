@@ -157,14 +157,14 @@ MonoBehaviour:
   rbMass: 0
   rbPhysMat: {fileID: 6200000, guid: 6111f9f6a86213743a38c8296b72b8f4, type: 2}
   neighborSpringSettings:
-    dist: 0.005
+    dist: 0.05
     damp: 0.3
-    freq: 5
+    freq: 20
     breakForce: 1000
   oppositeSpringSettings:
-    dist: 0.005
+    dist: 0.05
     damp: 0.3
-    freq: 5
+    freq: 20
     breakForce: 1000
 --- !u!1 &410629865698111064
 GameObject:
@@ -177,9 +177,9 @@ GameObject:
   - component: {fileID: 5786603031784295899}
   - component: {fileID: 7412746192943699726}
   - component: {fileID: 3054526087829696611}
-  - component: {fileID: 1996535861121725814}
-  - component: {fileID: 6443591226731140781}
-  - component: {fileID: 8093561538783368879}
+  - component: {fileID: 3691034561023343918}
+  - component: {fileID: 7266586474191571748}
+  - component: {fileID: 655378268072564239}
   m_Layer: 0
   m_Name: bone_2
   m_TagString: Untagged
@@ -264,7 +264,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &1996535861121725814
+--- !u!231 &3691034561023343918
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,10 +282,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.07939058, y: -0.34436208}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &6443591226731140781
+  m_Frequency: 20
+--- !u!231 &7266586474191571748
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,10 +303,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.12763116, y: 0.464944}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &8093561538783368879
+  m_Frequency: 20
+--- !u!231 &655378268072564239
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -324,9 +324,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5931338, y: 0.047045816}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &851220532921676000
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,9 +338,9 @@ GameObject:
   - component: {fileID: 4920368722421925273}
   - component: {fileID: 3249489319174927266}
   - component: {fileID: 2508197230122553196}
-  - component: {fileID: 1379408202803228035}
-  - component: {fileID: 4616650161425454937}
-  - component: {fileID: 3076732147889552374}
+  - component: {fileID: 2552526911224814241}
+  - component: {fileID: 929209406860441633}
+  - component: {fileID: 711442661671396828}
   m_Layer: 0
   m_Name: bone_10
   m_TagString: Untagged
@@ -425,7 +425,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &1379408202803228035
+--- !u!231 &2552526911224814241
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -443,10 +443,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.08535558, y: -0.36214626}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &4616650161425454937
+  m_Frequency: 20
+--- !u!231 &929209406860441633
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -464,10 +464,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.09707362, y: 0.3105214}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &3076732147889552374
+  m_Frequency: 20
+--- !u!231 &711442661671396828
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -485,9 +485,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5696982, y: 0.037490733}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &1279947072501561611
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,9 +499,9 @@ GameObject:
   - component: {fileID: 8713101733556053885}
   - component: {fileID: 6013042789071027210}
   - component: {fileID: 3437128819777261483}
-  - component: {fileID: 4487369707997014242}
-  - component: {fileID: 1002762022371847811}
-  - component: {fileID: 1568522416974032177}
+  - component: {fileID: 6434218232256564866}
+  - component: {fileID: 2834246535262218110}
+  - component: {fileID: 1878101445950196750}
   m_Layer: 0
   m_Name: bone_3
   m_TagString: Untagged
@@ -586,7 +586,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &4487369707997014242
+--- !u!231 &6434218232256564866
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -604,10 +604,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.12321927, y: -0.36193523}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &1002762022371847811
+  m_Frequency: 20
+--- !u!231 &2834246535262218110
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -625,10 +625,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.08935517, y: 0.34191215}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &1568522416974032177
+  m_Frequency: 20
+--- !u!231 &1878101445950196750
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -646,9 +646,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5733941, y: 0.04159236}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &1350239299341251413
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,9 +660,9 @@ GameObject:
   - component: {fileID: 9082265189236880666}
   - component: {fileID: 2450067628940830665}
   - component: {fileID: 6492493711590131753}
-  - component: {fileID: 3782972350897913013}
-  - component: {fileID: 5982812412916619140}
-  - component: {fileID: 4543593078548256724}
+  - component: {fileID: 1151730284262491713}
+  - component: {fileID: 9139100081661074162}
+  - component: {fileID: 4551015919984204279}
   m_Layer: 0
   m_Name: bone_4
   m_TagString: Untagged
@@ -747,7 +747,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &3782972350897913013
+--- !u!231 &1151730284262491713
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -765,10 +765,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.12523371, y: -0.35844517}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &5982812412916619140
+  m_Frequency: 20
+--- !u!231 &9139100081661074162
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -786,10 +786,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.07070082, y: 0.37574127}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &4543593078548256724
+  m_Frequency: 20
+--- !u!231 &4551015919984204279
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -807,9 +807,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5698159, y: 0.032229736}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &1785478787884865086
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,9 +821,9 @@ GameObject:
   - component: {fileID: 6874343239359248469}
   - component: {fileID: 4369499180689677142}
   - component: {fileID: 714457356894040901}
-  - component: {fileID: 1887417911170597335}
-  - component: {fileID: 2736432718523103437}
-  - component: {fileID: 4239898240630070344}
+  - component: {fileID: 8323590528635790365}
+  - component: {fileID: 4495987711386890901}
+  - component: {fileID: 6520430693188745973}
   m_Layer: 0
   m_Name: bone_11
   m_TagString: Untagged
@@ -908,7 +908,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &1887417911170597335
+--- !u!231 &8323590528635790365
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -926,10 +926,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.08750142, y: -0.4139617}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &2736432718523103437
+  m_Frequency: 20
+--- !u!231 &4495987711386890901
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -947,10 +947,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.09148309, y: 0.3606471}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &4239898240630070344
+  m_Frequency: 20
+--- !u!231 &6520430693188745973
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -968,9 +968,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5915339, y: 0.02009052}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &2263865705902257018
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,9 +982,9 @@ GameObject:
   - component: {fileID: 3237968699671791705}
   - component: {fileID: 3461287384898860561}
   - component: {fileID: 1229101820697207162}
-  - component: {fileID: 1082353120670961232}
-  - component: {fileID: 4347079251433020178}
-  - component: {fileID: 383275845209995245}
+  - component: {fileID: 3117763364810039973}
+  - component: {fileID: 5637776971032474984}
+  - component: {fileID: 9125788830859983468}
   m_Layer: 0
   m_Name: bone_12
   m_TagString: Untagged
@@ -1069,7 +1069,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &1082353120670961232
+--- !u!231 &3117763364810039973
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1087,10 +1087,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.050597284, y: -0.37036794}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &4347079251433020178
+  m_Frequency: 20
+--- !u!231 &5637776971032474984
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1108,10 +1108,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.1021125, y: 0.41060176}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &383275845209995245
+  m_Frequency: 20
+--- !u!231 &9125788830859983468
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1129,9 +1129,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5806934, y: -0.06414187}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &2327855261688968996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,9 +1143,9 @@ GameObject:
   - component: {fileID: 8613721022841771662}
   - component: {fileID: 5869242088832951816}
   - component: {fileID: 8716722142799308159}
-  - component: {fileID: 5971728766137911930}
-  - component: {fileID: 416209766126423536}
-  - component: {fileID: 1318797315295261954}
+  - component: {fileID: 3947232166701406999}
+  - component: {fileID: 6144962027622563680}
+  - component: {fileID: 1435448277097148115}
   m_Layer: 0
   m_Name: bone_8
   m_TagString: Untagged
@@ -1230,7 +1230,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &5971728766137911930
+--- !u!231 &3947232166701406999
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1248,10 +1248,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.08487445, y: -0.4049063}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &416209766126423536
+  m_Frequency: 20
+--- !u!231 &6144962027622563680
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1269,10 +1269,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.18348369, y: 0.5090724}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &1318797315295261954
+  m_Frequency: 20
+--- !u!231 &1435448277097148115
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1290,9 +1290,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5930269, y: -0.050545156}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &4055724589735755862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,9 +1304,9 @@ GameObject:
   - component: {fileID: 53809391835550956}
   - component: {fileID: 3163236336462524778}
   - component: {fileID: 7880320426506382101}
-  - component: {fileID: 8429396242852041818}
-  - component: {fileID: 3384857131712875736}
-  - component: {fileID: 774128742822138740}
+  - component: {fileID: 2785891485086633409}
+  - component: {fileID: 5881346918329673162}
+  - component: {fileID: 7415370423048100037}
   m_Layer: 0
   m_Name: bone_9
   m_TagString: Untagged
@@ -1391,7 +1391,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &8429396242852041818
+--- !u!231 &2785891485086633409
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1409,10 +1409,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.04645156, y: -0.32200786}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &3384857131712875736
+  m_Frequency: 20
+--- !u!231 &5881346918329673162
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1430,10 +1430,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.11387737, y: 0.39772433}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &774128742822138740
+  m_Frequency: 20
+--- !u!231 &7415370423048100037
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1451,9 +1451,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5728012, y: -0.059936196}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &5880309234632660874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,9 +1465,9 @@ GameObject:
   - component: {fileID: 6475087500752279322}
   - component: {fileID: 723701605599464138}
   - component: {fileID: 9214237129826007582}
-  - component: {fileID: 1217860883713412842}
-  - component: {fileID: 2376729043751125445}
-  - component: {fileID: 2976889089853911172}
+  - component: {fileID: 4005955304237936212}
+  - component: {fileID: 1388131177572680589}
+  - component: {fileID: 8874952137613474765}
   m_Layer: 0
   m_Name: bone_5
   m_TagString: Untagged
@@ -1552,7 +1552,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &1217860883713412842
+--- !u!231 &4005955304237936212
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1570,10 +1570,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.09193069, y: -0.4425677}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &2376729043751125445
+  m_Frequency: 20
+--- !u!231 &1388131177572680589
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1591,10 +1591,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.049887627, y: 0.37640074}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &2976889089853911172
+  m_Frequency: 20
+--- !u!231 &8874952137613474765
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1612,9 +1612,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5913006, y: 0.03385353}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &6439392148855143830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,9 +1626,9 @@ GameObject:
   - component: {fileID: 7371866861394607946}
   - component: {fileID: 8575104229633916710}
   - component: {fileID: 2646104968004823665}
-  - component: {fileID: 4499559801074592818}
-  - component: {fileID: 7482636854017065854}
-  - component: {fileID: 4720765449015815956}
+  - component: {fileID: 1315554962730416491}
+  - component: {fileID: 3597451782924678098}
+  - component: {fileID: 4421917210839433127}
   m_Layer: 0
   m_Name: bone_7
   m_TagString: Untagged
@@ -1713,7 +1713,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &4499559801074592818
+--- !u!231 &1315554962730416491
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1731,10 +1731,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.17153087, y: -0.5132233}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &7482636854017065854
+  m_Frequency: 20
+--- !u!231 &3597451782924678098
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1752,10 +1752,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.09391492, y: 0.4089136}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &4720765449015815956
+  m_Frequency: 20
+--- !u!231 &4421917210839433127
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1773,9 +1773,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5732539, y: -0.030062351}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &6591370428100750702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,9 +1787,9 @@ GameObject:
   - component: {fileID: 6639298583683295290}
   - component: {fileID: 3988392802324040519}
   - component: {fileID: 2501539174633053215}
-  - component: {fileID: 2183184707010948361}
-  - component: {fileID: 2723607421833550056}
-  - component: {fileID: 7594577084994680862}
+  - component: {fileID: 1677904389277148521}
+  - component: {fileID: 6566572748350876325}
+  - component: {fileID: 5064707386641093765}
   m_Layer: 0
   m_Name: bone_6
   m_TagString: Untagged
@@ -1874,7 +1874,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &2183184707010948361
+--- !u!231 &1677904389277148521
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1892,10 +1892,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.13952671, y: -0.3956799}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &2723607421833550056
+  m_Frequency: 20
+--- !u!231 &6566572748350876325
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1913,10 +1913,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.1338153, y: 0.4317533}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &7594577084994680862
+  m_Frequency: 20
+--- !u!231 &5064707386641093765
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1934,9 +1934,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5762548, y: -0.13463527}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
 --- !u!1 &8683025111895692003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,9 +1948,9 @@ GameObject:
   - component: {fileID: 796463949286557520}
   - component: {fileID: 1130779900549815435}
   - component: {fileID: 5448874525558509088}
-  - component: {fileID: 6382595663453592268}
-  - component: {fileID: 4586981729132944445}
-  - component: {fileID: 2935728208575724897}
+  - component: {fileID: 6043305453419285454}
+  - component: {fileID: 3061902666565263891}
+  - component: {fileID: 801369177538416915}
   m_Layer: 0
   m_Name: bone_1
   m_TagString: Untagged
@@ -2035,7 +2035,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!231 &6382595663453592268
+--- !u!231 &6043305453419285454
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2053,10 +2053,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.17712247, y: -0.44843104}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &4586981729132944445
+  m_Frequency: 20
+--- !u!231 &3061902666565263891
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2074,10 +2074,10 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.15813874, y: 0.33871034}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
---- !u!231 &2935728208575724897
+  m_Frequency: 20
+--- !u!231 &801369177538416915
 SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2095,6 +2095,6 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.5732937, y: 0.027900966}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.005
+  m_Distance: 0.05
   m_DampingRatio: 0.3
-  m_Frequency: 5
+  m_Frequency: 20
