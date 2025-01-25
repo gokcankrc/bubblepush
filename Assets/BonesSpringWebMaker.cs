@@ -2,13 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sirenix.OdinInspector;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class BonesSpringWebMaker : MonoBehaviour
 {
     // not the kind of joint you think
     private GameObject[] joints;
-    [SerializeField] private float rbMass;
+    [SerializeField] private float radius = 0.8f;
+    [SerializeField] private float rbMass = 1f;
     [SerializeField] private PhysicsMaterial2D rbPhysMat;
     [SerializeField] private SpringSettings neighborSpringSettings;
     [SerializeField] private SpringSettings oppositeSpringSettings;
@@ -66,6 +68,25 @@ public class BonesSpringWebMaker : MonoBehaviour
             {
                 DestroyImmediate(joint);
             }
+        }
+    }
+
+    [Button]
+    private void AdjustBones()
+    {
+        joints = transform.Cast<Transform>().Select(x => x.gameObject).ToArray();
+        int count = joints.Length;
+
+        for (int i = 0; i < count; i++)
+        {
+            Transform current = joints[i].transform;
+            var pos = Vector3.right * radius;
+            var angle = 360f / count * i;
+            pos = Quaternion.AngleAxis(angle, Vector3.back) * pos;
+            current.localPosition = pos;
+            var rot = current.rotation;
+            rot.eulerAngles = new Vector3(0, 0,- angle + 180f);
+            current.rotation = rot;
         }
     }
 
