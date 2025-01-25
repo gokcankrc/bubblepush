@@ -13,7 +13,6 @@ public class CameraControl : MonoBehaviour
     {
         if (IsBladeUnderCursor())
         {
-            Debug.Log("Under");
             Vector3 cameraMovement = Vector3.zero;
             if (Input.mousePosition.x > Screen.width - edgeThreshold)
             { 
@@ -37,7 +36,6 @@ public class CameraControl : MonoBehaviour
             }
 
             mainCamera.transform.position += cameraMovement;
-
         }
 
 

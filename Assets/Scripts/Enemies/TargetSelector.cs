@@ -38,5 +38,11 @@ namespace Enemies
         {
             return Target;
         }
+        
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, Range);
+        }
     }
 }

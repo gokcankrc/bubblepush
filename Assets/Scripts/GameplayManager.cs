@@ -11,9 +11,14 @@ public class GameplayManager : Singleton<GameplayManager>
 
     public List<Bubble> Bubbles = new List<Bubble>();
 
-    
-    
-    
-    
-    
+
+    public void AddBubble(Bubble bubble)
+    {
+        Bubbles.Add(bubble);
+    }
+
+    public void RemoveBubble(Bubble bubble)
+    {
+        Bubbles.Remove(bubble);
+    }
 }

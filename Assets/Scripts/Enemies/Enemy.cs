@@ -31,5 +31,10 @@ namespace Enemies
             Shooter.Shoot(target);
             LastShootTime = Time.time;
         }
+
+        public void BlowUp()
+        {
+            Destroy(gameObject);
+        }
     }
 }

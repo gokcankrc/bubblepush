@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Enemies
@@ -11,9 +12,10 @@ namespace Enemies
 
         public void Shoot(Vector3 direction, Vector3 position)
         {
+            ShootPosition.localPosition = direction * ShootPositionDistance;
+
             var projectile = Instantiate(ProjectilePrefab, position, Quaternion.identity);
 
-            ShootPosition.localPosition = direction * ShootPositionDistance;
             projectile.Init(this);
 
             projectile.Shoot(direction);
@@ -28,5 +30,7 @@ namespace Enemies
             var targetVector = target.position - ShootPosition.position;
             Shoot(targetVector.normalized, ShootPosition.position);
         }
+
+    
     }
 }
