@@ -7,7 +7,20 @@ public class EndZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        StartCoroutine(delayed());
+        var bubble = other.GetComponentInParent<Bubble>();
+        if (bubble)
+        {
+            StartCoroutine(delayed());
+            return;
+        }
+
+        if (other.TryGetComponent(out BubbleJointBridge bridge))
+        {
+            if (bridge.Bubble)
+            {
+                StartCoroutine(delayed());
+            }
+        }
 
         IEnumerator delayed()
         {
@@ -18,19 +31,6 @@ public class EndZone : MonoBehaviour
 
     private void WinMaybe(Collider2D other)
     {
-        var bubble = other.GetComponentInParent<Bubble>();
-        if (bubble)
-        {
-            GameManager.I.WinConditionMet();
-            return;
-        }
-
-        if (other.TryGetComponent(out BubbleJointBridge bridge))
-        {
-            if (bridge.Bubble)
-            {
-                GameManager.I.WinConditionMet();
-            }
-        }
+        GameManager.I.WinConditionMet();
     }
 }
