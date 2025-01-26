@@ -30,7 +30,7 @@ namespace Enemies
             var targetVector = target.position - ShootPosition.position;
 
             var direction = targetVector.normalized;
-            ShootPosition.localPosition = direction * ShootPositionDistance;
+           
 
             Shoot(direction, ShootPosition.position);
         }
