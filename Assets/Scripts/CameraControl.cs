@@ -4,71 +4,70 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public Camera mainCamera;          
+    public Camera mainCamera;
     public Transform blade;
     public float edgeThreshold;
     public float moveSpeed;
 
-    void Update()
+    void FixedUpdate()
     {
         if (IsBladeUnderCursor())
         {
-            Debug.Log($"EXPRESSION");
             Vector3 cameraMovement = Vector3.zero;
             if (Input.mousePosition.x > Screen.width - edgeThreshold)
-            { 
+            {
                 //Edge Right
-                cameraMovement.x += moveSpeed; 
+                cameraMovement.x += moveSpeed;
             }
+
             if (Input.mousePosition.x < edgeThreshold)
             {
                 //Edge Left
                 cameraMovement.x -= moveSpeed;
             }
+
             if (Input.mousePosition.y > Screen.height - edgeThreshold)
             {
                 //Edge Top
                 cameraMovement.y += moveSpeed;
             }
+
             if (Input.mousePosition.y < edgeThreshold)
             {
                 //Edge Bottom
                 cameraMovement.y -= moveSpeed;
             }
 
-            mainCamera.transform.position += cameraMovement * Time.deltaTime;
+            mainCamera.transform.position += cameraMovement * Time.fixedDeltaTime;
         }
-        else
-        {
-            
-            Debug.Log($"x");
-        }
+
         Vector3 camMovement = Vector3.zero;
         if (Input.GetKey(KeyCode.A))
         {
             camMovement.x -= 1;
         }
-        
+
         if (Input.GetKey(KeyCode.D))
         {
             camMovement.x += 1;
         }
-        
+
         if (Input.GetKey(KeyCode.W))
         {
             camMovement.y += 1;
         }
 
-        
         if (Input.GetKey(KeyCode.S))
         {
             camMovement.y -= 1;
         }
 
-        mainCamera.transform.position += camMovement.normalized * (moveSpeed * Time.deltaTime);
+        mainCamera.transform.position += camMovement.normalized * (moveSpeed * Time.fixedDeltaTime);
     }
+
     private bool IsBladeUnderCursor()
     {
+        return true;
         Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Collider2D hitCollider = Physics2D.OverlapPoint(mouseWorldPosition);
 

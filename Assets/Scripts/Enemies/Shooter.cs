@@ -19,8 +19,6 @@ namespace Enemies
 
             projectile.Shoot(direction);
             projectile.transform.right = direction;
-            Debug.Log(projectile, projectile);
-
         }
 
 
