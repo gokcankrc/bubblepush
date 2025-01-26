@@ -140,6 +140,24 @@ MonoBehaviour:
   PopThatBubble: {fileID: 3670971947264599330}
   SnapToCenterOfMass: {fileID: 4964259527760136178}
   DamageRange: 1.5
+  SpriteRenderer: {fileID: 6227474988671804059}
+  BoneRigidbodies:
+  - {fileID: 9137824325559105561}
+  - {fileID: 2246595854125762138}
+  - {fileID: 1944845024145209746}
+  - {fileID: 8023058198275636752}
+  - {fileID: 5373308463545240615}
+  - {fileID: 1727439340657879590}
+  - {fileID: 1294365151236611144}
+  - {fileID: 5599765263661470534}
+  - {fileID: 6346378782070431020}
+  - {fileID: 1693547361178646869}
+  - {fileID: 4369647654458475900}
+  - {fileID: 2612366878067775299}
+  DefaultColor: {r: 0.25490198, g: 0.08627451, b: 0.08627451, a: 1}
+  InRangeColor: {r: 0.101960786, g: 0.10448419, b: 0.50980395, a: 1}
+  PullingColor: {r: 0.14438558, g: 1, b: 0, a: 1}
+  CanPull: 1
 --- !u!1 &4470747680173889003
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +167,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3929938573207192671}
-  - component: {fileID: 7006268954470977663}
   m_Layer: 0
   m_Name: Bubble 12
   m_TagString: Untagged
@@ -174,33 +191,6 @@ Transform:
   - {fileID: 2085085246720668524}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &7006268954470977663
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4470747680173889003}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &1869858799280025038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2067,6 +2057,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shootable: {fileID: 8726052450198182348}
+--- !u!212 &6227474988671804059 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7143333309788001442, guid: d79c39407476f3648b11f89f425b6db7, type: 3}
+  m_PrefabInstance: {fileID: 3841104622769452601}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &6346378782070431020 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7880320426506382101, guid: d79c39407476f3648b11f89f425b6db7, type: 3}

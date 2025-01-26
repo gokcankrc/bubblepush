@@ -38,8 +38,29 @@ public class CameraControl : MonoBehaviour
             mainCamera.transform.position += cameraMovement;
         }
 
+        Vector3 camMovement = Vector3.zero;
+        if (Input.GetKey(KeyCode.A))
+        {
+            camMovement.x -= 1;
+        }
+        
+        if (Input.GetKey(KeyCode.D))
+        {
+            camMovement.x += 1;
+        }
+        
+        if (Input.GetKey(KeyCode.W))
+        {
+            camMovement.y += 1;
+        }
 
         
+        if (Input.GetKey(KeyCode.S))
+        {
+            camMovement.y -= 1;
+        }
+
+        mainCamera.transform.position += camMovement.normalized * moveSpeed;
     }
     private bool IsBladeUnderCursor()
     {

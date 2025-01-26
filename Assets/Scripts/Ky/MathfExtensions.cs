@@ -225,5 +225,23 @@ namespace Ky
                 ruf
             };
         }
+
+        /// <summary>
+        /// Calculates the projection of vector a onto vector b.
+        /// </summary>
+        /// <param name="a">The vector being projected.</param>
+        /// <param name="b">The vector onto which a is projected.</param>
+        /// <returns>The projection of vector a onto vector b.</returns>
+        public static Vector2 Project(Vector2 a, Vector2 b)
+        {
+            if (b == Vector2.zero)
+                throw new System.ArgumentException("Vector b cannot be zero.");
+
+            // Projection formula: (dot(a, b) / dot(b, b)) * b
+            float dotProduct = Vector2.Dot(a, b);
+            float magnitudeSquared = b.sqrMagnitude; // Magnitude squared of vector b
+            return (dotProduct / magnitudeSquared) * b;
+        }
+
     }
 }
