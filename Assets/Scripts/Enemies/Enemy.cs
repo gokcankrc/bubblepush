@@ -8,6 +8,8 @@ namespace Enemies
         public Shooter Shooter;
         public TargetSelector TargetSelector;
         public float ShootCooldown;
+        public GameObject idleParticle, chargeParticle;
+
         
         public float LastShootTime { get; private set; }
 
@@ -30,11 +32,21 @@ namespace Enemies
 
         private void Update()
         {
-            if (Time.time < LastShootTime + ShootCooldown) return;
+            if (!TargetSelector.HasTarget()) 
+            {
+                idleParticle.gameObject.SetActive(true);
+                return; 
+            }
 
-            if (!TargetSelector.HasTarget()) return;
-            
+            idleParticle.gameObject.SetActive(false);
+
             var target = TargetSelector.GetTarget();
+
+            transform.right = target.transform.position - transform.position;
+
+            if (Time.time < LastShootTime + ShootCooldown) return;
+            
+            
             
             Shooter.Shoot(target);
             LastShootTime = Time.time;
