@@ -9,7 +9,7 @@ public class CameraControl : MonoBehaviour
     public float edgeThreshold;
     public float moveSpeed;
 
-    void Update()
+    void FixedUpdate()
     {
         if (IsBladeUnderCursor())
         {
@@ -35,7 +35,7 @@ public class CameraControl : MonoBehaviour
                 cameraMovement.y -= moveSpeed;
             }
 
-            mainCamera.transform.position += cameraMovement * Time.deltaTime;
+            mainCamera.transform.position += cameraMovement * Time.fixedDeltaTime;
         }
 
         Vector3 camMovement = Vector3.zero;
@@ -60,7 +60,7 @@ public class CameraControl : MonoBehaviour
             camMovement.y -= 1;
         }
 
-        mainCamera.transform.position += camMovement.normalized * (moveSpeed * Time.deltaTime);
+        mainCamera.transform.position += camMovement.normalized * (moveSpeed * Time.fixedDeltaTime);
     }
     private bool IsBladeUnderCursor()
     {
