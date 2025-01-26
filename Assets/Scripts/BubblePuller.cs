@@ -13,6 +13,8 @@ public class BubblePuller : MonoBehaviour
 
     public GameplayManager GameplayManager { get; private set; }
 
+    public bool IsActive { get; private set; }
+    
     public bool IsPulling { get; private set; }
 
     private void Start()
@@ -22,6 +24,8 @@ public class BubblePuller : MonoBehaviour
 
     private void Update()
     {
+        if (!IsActive) return;
+        
         FilterBubbles();
         HandleBubblesInRange();
 
@@ -39,6 +43,16 @@ public class BubblePuller : MonoBehaviour
         {
             PullEnd();
         }
+    }
+
+    public void Activate()
+    {
+        IsActive = true;
+    }
+
+    public void Deactivate()
+    {
+        IsActive = false;
     }
 
 
@@ -73,7 +87,7 @@ public class BubblePuller : MonoBehaviour
     {
         var pullRangeSqr = PullRange * PullRange;
         var minRangeSqr = MinRange * MinRange;
-        var bubbles = GameplayManager.Bubbles;
+        var bubbles = GameplayManager.ActiveBubbles;
 
         var position = transform.position;
 

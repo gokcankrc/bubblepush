@@ -35,7 +35,7 @@ public class CameraControl : MonoBehaviour
                 cameraMovement.y -= moveSpeed;
             }
 
-            mainCamera.transform.position += cameraMovement;
+            mainCamera.transform.position += cameraMovement * Time.deltaTime;
         }
 
         Vector3 camMovement = Vector3.zero;
@@ -60,7 +60,7 @@ public class CameraControl : MonoBehaviour
             camMovement.y -= 1;
         }
 
-        mainCamera.transform.position += camMovement.normalized * moveSpeed;
+        mainCamera.transform.position += camMovement.normalized * (moveSpeed * Time.deltaTime);
     }
     private bool IsBladeUnderCursor()
     {

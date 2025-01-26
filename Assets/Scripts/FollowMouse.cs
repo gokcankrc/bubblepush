@@ -16,6 +16,9 @@ public class FollowMouse : MonoBehaviour
 
     public float RotationSpeed = 10f;
 
+    
+    public bool IsActive { get; private set; }
+
     private void Start()
     {
         Vector3 screenPosition = Input.mousePosition;
@@ -29,6 +32,9 @@ public class FollowMouse : MonoBehaviour
 
     private void Update()
     {
+        if (!IsActive) return;
+        
+        
         Vector3 screenPosition = Input.mousePosition;
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
 
@@ -55,5 +61,15 @@ public class FollowMouse : MonoBehaviour
         
         rb.velocity = Vector3.zero;
         rb.MovePosition(worldPosition);
+    }
+
+    public void Activate()
+    {
+        IsActive = true;
+    }
+
+    public void Deactivate()
+    {
+        IsActive = false;
     }
 }

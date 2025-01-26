@@ -13,7 +13,7 @@ namespace Enemies
         
         public bool HasTarget()
         {
-            var bubbles =  GameplayManager.I.Bubbles;
+            var bubbles =  GameplayManager.I.ActiveBubbles;
 
             var inRangeTargets = new List<Transform>();
             foreach (var bubble in bubbles)

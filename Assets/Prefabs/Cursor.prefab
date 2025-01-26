@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4928936402912107430}
   - component: {fileID: 4987049690225628822}
   - component: {fileID: 3695544063709643803}
-  - component: {fileID: 7498894563088706861}
   - component: {fileID: 7212045531642745316}
+  - component: {fileID: 7498894563088706861}
   - component: {fileID: 1600679390609465176}
   m_Layer: 8
   m_Name: Cursor
@@ -151,6 +151,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7212045531642745316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160107391843129457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68293ce6b7845479dfce58eb2f599b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowMouse: {fileID: 7498894563088706861}
+  BubblePuller: {fileID: 1600679390609465176}
 --- !u!114 &7498894563088706861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,18 +181,6 @@ MonoBehaviour:
   Count: 3
   Threshold: 0.5
   RotationSpeed: 10
---- !u!114 &7212045531642745316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4160107391843129457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b68293ce6b7845479dfce58eb2f599b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1600679390609465176
 MonoBehaviour:
   m_ObjectHideFlags: 0

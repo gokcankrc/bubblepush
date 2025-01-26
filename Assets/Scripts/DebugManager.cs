@@ -12,6 +12,12 @@ public class DebugManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
 
 #if UNITY_EDITOR
         if (Input.GetKeyDown(stopTimeKey))

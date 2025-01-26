@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour, IShootable
 {
+    public bool IsActive = true;
+
     public PopThatBubble PopThatBubble;
     public SnapToCenterOfMass SnapToCenterOfMass;
     public float DamageRange = 1f;
@@ -17,14 +19,21 @@ public class Bubble : MonoBehaviour, IShootable
     public Color InRangeColor = Color.red;
     public Color PullingColor = Color.green;
     
-    public bool CanPull = true;
-    
+    public bool CanPull { get; private set; } = true;
     public GameplayManager GameplayManager { get; private set; }
 
     private void Start()
     {
         GameplayManager = GameplayManager.I;
-        GameplayManager.AddBubble(this);
+        if (IsActive)
+        {
+            GameplayManager.AddBubble(this);
+
+        }
+        else
+        {
+            GameplayManager.AddDeactivatedBubble(this);
+        }
     }
 
 
