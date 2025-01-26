@@ -68,10 +68,5 @@ public class CameraControl : MonoBehaviour
     private bool IsBladeUnderCursor()
     {
         return true;
-        Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        Collider2D hitCollider = Physics2D.OverlapPoint(mouseWorldPosition);
-
-        // Check if the hit object is the Mermaid
-        return hitCollider != null && hitCollider.transform == blade;
     }
 }
