@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     {
         GameManager.I.Lock();
         yield return null;
-        
+        UIManager.I.CloseAllUI();
         GameplayManager.I.Player.Activate();
     }
 
