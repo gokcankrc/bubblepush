@@ -35,11 +35,12 @@ namespace Enemies
             if (!TargetSelector.HasTarget()) 
             {
                 idleParticle.gameObject.SetActive(true);
+                chargeParticle.gameObject.SetActive(false);
                 return; 
             }
 
             idleParticle.gameObject.SetActive(false);
-
+            chargeParticle.gameObject.SetActive(true);
             var target = TargetSelector.GetTarget();
 
             transform.right = target.transform.position - transform.position;

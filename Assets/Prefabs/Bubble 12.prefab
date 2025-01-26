@@ -162,8 +162,8 @@ MonoBehaviour:
   - {fileID: 2612366878067775299}
   DeactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   DefaultColor: {r: 0.25490198, g: 0.08627451, b: 0.08627451, a: 1}
-  InRangeColor: {r: 0.101960786, g: 0.10448419, b: 0.50980395, a: 1}
-  PullingColor: {r: 0.14438558, g: 1, b: 0, a: 1}
+  InRangeColor: {r: 0.301, g: 0.101876915, b: 0.101876915, a: 1}
+  PullingColor: {r: 0.352, g: 0.11874697, b: 0.11874697, a: 1}
 --- !u!1 &4470747680173889003
 GameObject:
   m_ObjectHideFlags: 0
