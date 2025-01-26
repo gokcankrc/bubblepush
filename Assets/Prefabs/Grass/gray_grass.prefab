@@ -60,7 +60,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!233 &190022875687709063
 HingeJoint2D:
@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1694123890136874671}
   - component: {fileID: 4514772308684035821}
   - component: {fileID: 7597111824406792202}
+  - component: {fileID: 3102197938611468507}
   m_Layer: 15
   m_Name: gray_grass
   m_TagString: Untagged
@@ -250,6 +251,21 @@ MonoBehaviour:
   brokenEffectPrefab: {fileID: 0}
   fadeDuration: 0.2
   FakeGrass: {fileID: 0}
+--- !u!114 &3102197938611468507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4836251869639576672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa5bff2b3364043a99bee002ca837e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbodies: []
+  gameObjects:
+  - {fileID: 2117224739022377557}
 --- !u!1 &6243676003397901547
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +409,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!233 &9211080325969581344
 HingeJoint2D:
@@ -515,7 +531,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!233 &3773715584693664722
 HingeJoint2D:

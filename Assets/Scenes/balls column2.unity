@@ -31029,7 +31029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194227}
   blade: {fileID: 2031199997}
-  edgeThreshold: 100
+  edgeThreshold: 0.95
   moveSpeed: 10
 --- !u!1001 &1005557059
 PrefabInstance:
