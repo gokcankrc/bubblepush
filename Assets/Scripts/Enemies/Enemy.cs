@@ -165,6 +165,20 @@ namespace Enemies
 
         public void BlowUp()
         {
+            if (DeathParticle)
+            {
+                var deathParticleSystem = Instantiate(DeathParticle, transform.position, Quaternion.identity);
+                deathParticleSystem.Play();
+                Destroy(deathParticleSystem, 5f);
+            }
+
+            if (DeathAudio)
+            {
+                var deathAudio = Instantiate(DeathAudio, transform.position, Quaternion.identity);
+                deathAudio.Play();
+                Destroy(deathAudio, 5f);
+            }
+            
             Destroy(gameObject);
         }
     }
