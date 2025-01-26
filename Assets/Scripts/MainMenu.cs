@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public Transform BubbleContainer;
 
     private bool _isSpawning = false;
-    
+
     public IEnumerator Start()
     {
         GameManager.I.Lock();
@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
             _isSpawning = false;
             return;
         }
-        
+
         if (GameplayManager.I.ActiveBubbles.Count <= 0)
         {
             Instantiate(BubblePrefab, BubbleContainer.position, Quaternion.identity);
@@ -40,6 +40,11 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         LevelManager.I.StartFirstLevel();
+    }
+
+    public void PlayGameAlt()
+    {
+        LevelManager.I.StartAltLevel();
     }
 
     public void ExitGame()

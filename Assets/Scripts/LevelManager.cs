@@ -17,7 +17,11 @@ public class LevelManager : Singleton<LevelManager>
         SceneManager.LoadScene((1) % SceneManager.sceneCountInBuildSettings);
         GameManager.I.LevelLoaded();
     }
-    
+    public void StartAltLevel()
+    {
+        SceneManager.LoadScene((2) % SceneManager.sceneCountInBuildSettings);
+        GameManager.I.LevelLoaded();
+    }
     
     public void RestartLevel()
     {
