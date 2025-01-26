@@ -540,9 +540,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 105e988b66c3d4242ade7f4d1aa8ec88, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0d20aa034082d004a81c6ea37dbf5755, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.383
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -939,6 +939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartSceneKey: 286
   stopTimeKey: 98
+  loseKey: 108
+  winKey: 111
 --- !u!1 &4384666098348555867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,9 +1658,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0e6b8ddcb0ca8c74587c00045088cb4f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 707ec8a8d5468d94f95f25cb7bd665aa, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.662
   m_Pitch: 1
   Loop: 1
   Mute: 0

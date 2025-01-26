@@ -196,5 +196,5 @@ MonoBehaviour:
   AudioSource: {fileID: 0}
   PullRange: 8
   MinRange: 0
-  PullForce: 1
-  MaxPullVelocity: 1
+  PullForce: 2
+  MaxPullVelocity: 3
