@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Ky;
 using Sirenix.OdinInspector;
@@ -8,10 +9,29 @@ public class AudioManager : Singleton<AudioManager>
    public AudioSource MenuSound;
    public AudioSource GameSound;
    
+   private float _menuVolume;
+   private float _gameVolume;
    
+   private Coroutine _coroutine;
+   
+   private void Start()
+   {
+      _menuVolume = MenuSound.volume;
+      _gameVolume = GameSound.volume;
+   }
+
    public void SwitchAudio(AudioSource from, AudioSource to, float duration)
    {
-      StartCoroutine(SwitchCoroutine(from, to, duration));
+      if (_coroutine != null)
+      {
+         StopCoroutine(_coroutine);
+         MenuSound.volume = _menuVolume;
+         GameSound.volume = _gameVolume;
+      }
+      
+      
+      _coroutine = StartCoroutine(SwitchCoroutine(from, to, duration));
+      
    }
 
    private IEnumerator SwitchCoroutine(AudioSource from, AudioSource to, float duration)
@@ -44,10 +64,23 @@ public class AudioManager : Singleton<AudioManager>
       from.Stop();
       from.volume = fromInitial;
       to.volume = toInitial;
+      _coroutine = null;
    }
 
+
+   public void PlayMenuSound()
+   {
+      MenuSound.Play();
+   }
+
+   public void PlayGameSound()
+   {
+      GameSound.Play();
+   }
+   
+
    [Button]
-   public void Play()
+   private void Play()
    {
       MenuSound.Play();
    }

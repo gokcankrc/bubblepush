@@ -10,6 +10,7 @@ public class GameManager : Singleton<GameManager>
     private void Start()
     {
         LevelLoaded();
+        AudioManager.I.PlayMenuSound();
     }
 
     public void LevelLoaded()
@@ -25,6 +26,7 @@ public class GameManager : Singleton<GameManager>
         GameplayManager.I.GameEnded();
         IsRunning = false;
         UIManager.I.ShowWinUI();
+        
     }
 
     public void LoseConditionMet()

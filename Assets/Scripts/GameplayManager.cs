@@ -23,13 +23,16 @@ public class GameplayManager : Singleton<GameplayManager>
         Cursor.lockState = CursorLockMode.Confined;
         WarpCursorToWorldObject(Player.transform);
         Player.Activate();
+        AudioManager.I.SwitchAudio(AudioManager.I.MenuSound, AudioManager.I.GameSound, 2f);
     }
 
     public void GameEnded()
     {
         Cursor.visible = true;
         GameIsPlaying = false;
-        Player.Deactivate();
+        Player.Deactivate();        
+        
+        AudioManager.I.SwitchAudio(AudioManager.I.GameSound, AudioManager.I.MenuSound, 2f);
     }
 
     private void Update()
