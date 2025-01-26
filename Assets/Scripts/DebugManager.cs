@@ -10,7 +10,9 @@ public class DebugManager : MonoBehaviour
     {
         if (Input.GetKeyDown(restartSceneKey))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GameplayManager.I.GameEnded();
+            LevelManager.I.RestartLevel();
+            
         }
         
         if (Input.GetKeyDown(KeyCode.C))

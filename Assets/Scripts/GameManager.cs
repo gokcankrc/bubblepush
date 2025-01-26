@@ -54,7 +54,7 @@ public class GameManager : Singleton<GameManager>
     private void Update()
     {
         if (Started) return;
-        if (!Input.anyKey) return;
+        if (!Input.anyKeyDown) return;
         
         
         GameplayManager.I.StartGame();

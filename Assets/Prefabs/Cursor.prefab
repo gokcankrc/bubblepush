@@ -194,6 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PullRange: 8
-  MinRange: 3.5
+  MinRange: 0
   PullForce: 1
   MaxPullVelocity: 1
