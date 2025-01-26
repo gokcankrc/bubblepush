@@ -1,14 +1,20 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class BubbleTrigger : MonoBehaviour
 {
-   public UnityEvent OnBubbleTriggered;
+    public UnityEvent OnBubbleTriggered;
+    public float delay = 1f;
 
-   public void TriggerBubble()
-   {
-      OnBubbleTriggered?.Invoke();
-   }
+    public void TriggerBubble()
+    {
+        StartCoroutine(delayed());
+
+        IEnumerator delayed()
+        {
+            yield return new WaitForSeconds(delay);
+            OnBubbleTriggered?.Invoke();
+        }
+    }
 }

@@ -220,6 +220,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  delay: 1
 --- !u!1 &272066403
 GameObject:
   m_ObjectHideFlags: 0
@@ -26267,6 +26268,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  delay: 1
 --- !u!1 &1253193672
 GameObject:
   m_ObjectHideFlags: 0
@@ -35474,6 +35476,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  delay: 1
 --- !u!1 &1764702400
 GameObject:
   m_ObjectHideFlags: 0
