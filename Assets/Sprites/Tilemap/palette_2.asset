@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: palette_2
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 462290695, guid: 7b3407514398e90499d50a6588f09d4a, type: 3}
-  m_Color: {r: 0.01, g: 0.01, b: 0.01, a: 0.011764706}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
