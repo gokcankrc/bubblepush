@@ -55,7 +55,7 @@ public class Bubble : MonoBehaviour, IShootable
 
     private void OnDestroy()
     {
-        GameplayManager.RemoveBubble(this);
+        GameplayManager?.RemoveBubble(this);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

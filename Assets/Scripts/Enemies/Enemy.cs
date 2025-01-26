@@ -148,6 +148,7 @@ namespace Enemies
                         idleParticle.gameObject.SetActive(true);
                     break;
                 case EnemyState.Charging:
+                    ChargeAudio.Play();
                     ChargeStartTime = Time.time;
                     if (chargeParticle)
                         chargeParticle.gameObject.SetActive(true);

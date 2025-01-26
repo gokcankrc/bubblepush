@@ -50,7 +50,6 @@ public class GrassHingeController : MonoBehaviour
 
     void OnHingeBroken()
     {
-        Debug.Log("dfsdfasdg");
         // Optional: Instantiate a visual effect when the hinge breaks
         if (brokenEffectPrefab != null)
         {
