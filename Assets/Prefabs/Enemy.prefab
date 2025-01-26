@@ -4902,7 +4902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5221954096594765295}
   m_Layer: 12
-  m_Name: GameObject
+  m_Name: Shoot Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4917,7 +4917,7 @@ Transform:
   m_GameObject: {fileID: 4664601605795030536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.889, y: 0, z: 0}
+  m_LocalPosition: {x: 1.347, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4978,8 +4978,11 @@ MonoBehaviour:
   Shooter: {fileID: 536761661024510007}
   TargetSelector: {fileID: 6496354091816093451}
   ShootCooldown: 4
+  ChargeDuration: 1
+  RotationSpeed: 10
   idleParticle: {fileID: 8972445276826588537}
   chargeParticle: {fileID: 2841968927263969488}
+  cooldownParticle: {fileID: 0}
 --- !u!114 &536761661024510007
 MonoBehaviour:
   m_ObjectHideFlags: 0
