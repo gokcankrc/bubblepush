@@ -102,7 +102,10 @@ public class BubblePuller : MonoBehaviour
             }
             else
             {
-                RemoveBubble(bubble);
+                if (!IsPulling)
+                {
+                    RemoveBubble(bubble);
+                }
             }
         }
     }
