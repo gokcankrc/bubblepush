@@ -22039,7 +22039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194227}
   blade: {fileID: 2031199997}
-  edgeThreshold: 70
+  edgeThreshold: 100
   moveSpeed: 10
 --- !u!1 &1026162933
 GameObject:
