@@ -938,6 +938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartSceneKey: 286
+  mainMenuKey: 27
   stopTimeKey: 98
   loseKey: 108
   winKey: 111

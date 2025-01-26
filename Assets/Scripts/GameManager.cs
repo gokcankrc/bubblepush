@@ -14,12 +14,24 @@ public class GameManager : Singleton<GameManager>
         AudioManager.I.PlayMenuSound();
     }
 
+    private void Update()
+    {
+        if (Locked) return;
+        if (Started) return;
+        if (!Input.anyKeyDown) return;
+
+        GameplayManager.I.StartGame();
+        UIManager.I.CloseAllUI();
+        Started = true;
+        IsRunning = true;
+    }
+
     public void LevelLoaded()
     {
         Started = false;
         UIManager.I.ShowPressAnyKeyUI();
     }
-    
+
     public void WinConditionMet()
     {
         if (!IsRunning) return;
@@ -27,7 +39,6 @@ public class GameManager : Singleton<GameManager>
         GameplayManager.I.GameEnded();
         IsRunning = false;
         UIManager.I.ShowWinUI();
-        
     }
 
     public void LoseConditionMet()
@@ -51,20 +62,6 @@ public class GameManager : Singleton<GameManager>
         GameplayManager.I.Clear();
         UIManager.I.CloseAllUI();
         LevelManager.I.LoadNextLevel();
-    }
-    
-
-    private void Update()
-    {
-        if (Locked) return;
-        if (Started) return;
-        if (!Input.anyKeyDown) return;
-        
-        
-        GameplayManager.I.StartGame();
-        UIManager.I.CloseAllUI();
-        Started = true;
-        IsRunning = true;
     }
 
     public void Lock()

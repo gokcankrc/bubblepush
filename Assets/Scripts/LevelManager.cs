@@ -11,7 +11,11 @@ public class LevelManager : Singleton<LevelManager>
         SceneManager.LoadScene(levelName);
         GameManager.I.LevelLoaded();
     }
-
+    public void StartMainMenu()
+    {
+        SceneManager.LoadScene((0) % SceneManager.sceneCountInBuildSettings);
+        GameManager.I.LevelLoaded();
+    }
     public void StartFirstLevel()
     {
         SceneManager.LoadScene((1) % SceneManager.sceneCountInBuildSettings);
