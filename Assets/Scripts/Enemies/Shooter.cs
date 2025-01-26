@@ -7,7 +7,6 @@ namespace Enemies
     {
         public Transform ShootPosition;
         public Projectile ProjectilePrefab;
-        public float ShootPositionDistance = 1f;
         public GameObject ShootParticle;
 
 

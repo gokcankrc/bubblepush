@@ -9,10 +9,11 @@ public class CameraControl : MonoBehaviour
     public float edgeThreshold;
     public float moveSpeed;
 
-    void FixedUpdate()
+    void Update()
     {
         if (IsBladeUnderCursor())
         {
+            Debug.Log($"EXPRESSION");
             Vector3 cameraMovement = Vector3.zero;
             if (Input.mousePosition.x > Screen.width - edgeThreshold)
             { 
@@ -35,9 +36,13 @@ public class CameraControl : MonoBehaviour
                 cameraMovement.y -= moveSpeed;
             }
 
-            mainCamera.transform.position += cameraMovement * Time.fixedDeltaTime;
+            mainCamera.transform.position += cameraMovement * Time.deltaTime;
         }
-
+        else
+        {
+            
+            Debug.Log($"x");
+        }
         Vector3 camMovement = Vector3.zero;
         if (Input.GetKey(KeyCode.A))
         {
@@ -60,7 +65,7 @@ public class CameraControl : MonoBehaviour
             camMovement.y -= 1;
         }
 
-        mainCamera.transform.position += camMovement.normalized * (moveSpeed * Time.fixedDeltaTime);
+        mainCamera.transform.position += camMovement.normalized * (moveSpeed * Time.deltaTime);
     }
     private bool IsBladeUnderCursor()
     {
