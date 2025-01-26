@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BubblePuller : MonoBehaviour
 {
+    public AudioSource AudioSource;
     public float PullRange = 10f;
     public float MinRange = 2f;
     public float PullForce = 1f;
@@ -63,6 +64,9 @@ public class BubblePuller : MonoBehaviour
         {
             bubble.PullStart();
         }
+        
+        if (AudioSource)
+            AudioSource.Play();
     }
 
     private void PullEnd()
@@ -72,6 +76,9 @@ public class BubblePuller : MonoBehaviour
         {
             bubble.PullEnd();
         }
+        
+        if (AudioSource)
+            AudioSource.Stop();
     }
 
     private void PullBubbles()

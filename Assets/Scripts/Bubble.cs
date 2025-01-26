@@ -16,6 +16,9 @@ public class Bubble : MonoBehaviour, IShootable
     public int DeactiveLayerIndex = 14;
     public int ActiveLayerEvenIndex = 7;
     public int ActiveLayerOddIndex = 9;
+
+    public ParticleSystem PopParticlePrefab;
+    public AudioSource PopAudioPrefab;
         
 
     public List<Rigidbody2D> BoneRigidbodies = new List<Rigidbody2D>();
@@ -69,6 +72,11 @@ public class Bubble : MonoBehaviour, IShootable
     private void Pop()
     {
         _popping = true;
+
+        SpawnVfx();
+        SpawnSfx();
+        
+        
         var overlapCircleAll = Physics2D.OverlapCircleAll(transform.position, DamageRange);
 
 
@@ -82,6 +90,26 @@ public class Bubble : MonoBehaviour, IShootable
 
 
         PopThatBubble.PopTheBubble();
+    }
+
+    private void SpawnSfx()
+    {
+        if (PopAudioPrefab)
+        {
+            var audioSource = Instantiate(PopAudioPrefab, transform.position, Quaternion.identity);
+            audioSource.Play();
+            Destroy(audioSource.gameObject, 5f);
+        }
+    }
+
+    private void SpawnVfx()
+    {
+        if (PopParticlePrefab)
+        {
+            var particleSystem = Instantiate(PopParticlePrefab, transform.position, Quaternion.identity);
+            particleSystem.Play();
+            Destroy(particleSystem.gameObject, 5f);
+        }
     }
 
     private void OnDrawGizmos()
