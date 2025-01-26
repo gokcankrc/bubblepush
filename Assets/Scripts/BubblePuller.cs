@@ -88,8 +88,6 @@ public class BubblePuller : MonoBehaviour
             }
             else
             {
-                Debug.Log("Removing");
-
                 RemoveBubble(bubble);
             }
         }
@@ -113,7 +111,6 @@ public class BubblePuller : MonoBehaviour
 
     private void RemoveBubble(Bubble bubble)
     {
-        Debug.Log("Remove");
         if (!_bubblesInRange.Contains(bubble)) return;
         _bubblesInRange.Remove(bubble);
         bubble.OutOfRange();

@@ -14,9 +14,9 @@ public class TransferShootable : MonoBehaviour, IShootable
        Shootable = _shootable.GetComponent<IShootable>();
    }
 
-   public void Shot(Projectile projectile, Shooter source)
+   public void Shot()
     {
        if (Shootable == null) return;
-       Shootable.Shot(projectile, source);
+       Shootable.Shot();
     }
 }

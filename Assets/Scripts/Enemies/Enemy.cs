@@ -18,7 +18,7 @@ namespace Enemies
             Debug.Log(other);
             if (other.collider.TryGetComponent(out IShootable shootable))
             {
-                shootable.Shot(null, Shooter);
+                shootable.Shot();
             }
         }
 

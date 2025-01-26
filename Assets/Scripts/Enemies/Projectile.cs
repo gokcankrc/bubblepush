@@ -14,7 +14,7 @@ namespace Enemies
         {
             if (other.collider.TryGetComponent(out IShootable shootable))
             {
-                shootable.Shot(this, Source);
+                shootable.Shot();
             }
             
             Destroy(gameObject);

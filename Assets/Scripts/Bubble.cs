@@ -39,7 +39,7 @@ public class Bubble : MonoBehaviour, IShootable
         Pop();
     }
 
-    public void Shot(Projectile projectile, Shooter source)
+    public void Shot()
     {
         Pop();
     }
@@ -70,7 +70,6 @@ public class Bubble : MonoBehaviour, IShootable
 
     public void OutOfRange()
     {
-        Debug.Log("Out of range");
         SpriteRenderer.color = DefaultColor;
     }
 
