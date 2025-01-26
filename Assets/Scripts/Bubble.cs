@@ -87,6 +87,14 @@ public class Bubble : MonoBehaviour, IShootable
                 enemy.BlowUp();
             }
         }
+        
+        foreach (Collider2D collider in overlapCircleAll)
+        {
+            if (collider.TryGetComponent(out BubbleTrigger trigger))
+            {
+                trigger.TriggerBubble();
+            }
+        }
 
 
         PopThatBubble.PopTheBubble();

@@ -17,7 +17,7 @@ public class colliderAssign : MonoBehaviour
     public List<PrefabWeight> prefabWeights;         // List of prefabs with weights
     public bool clearExistingObjects = true;         // Option to clear existing objects before spawning
 
-    void Start()
+    IEnumerator Start()
     {
         if (clearExistingObjects)
         {
@@ -25,6 +25,12 @@ public class colliderAssign : MonoBehaviour
         }
 
         SpawnPrefabs();
+
+        yield return null;
+        tilemap.color = Color.clear;
+        tilemap.GetComponent<TilemapRenderer>().enabled = false;
+        tilemap.enabled = false;
+
     }
 
     private void SpawnPrefabs()

@@ -6,6 +6,7 @@ public class GameManager : Singleton<GameManager>
 {
     public bool Started { get; private set; }
     public bool IsRunning { get; private set; }
+    public bool Locked { get; private set; } = false;
 
     private void Start()
     {
@@ -55,6 +56,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Update()
     {
+        if (Locked) return;
         if (Started) return;
         if (!Input.anyKeyDown) return;
         
@@ -63,5 +65,15 @@ public class GameManager : Singleton<GameManager>
         UIManager.I.CloseAllUI();
         Started = true;
         IsRunning = true;
+    }
+
+    public void Lock()
+    {
+        Locked = true;
+    }
+
+    public void Unlock()
+    {
+        Locked = false;
     }
 }

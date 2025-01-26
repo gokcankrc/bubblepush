@@ -26,6 +26,11 @@ public class GameplayManager : Singleton<GameplayManager>
         AudioManager.I.SwitchAudio(AudioManager.I.MenuSound, AudioManager.I.GameSound, 2f);
     }
 
+    public void SetCursorToPlayer()
+    {
+        WarpCursorToWorldObject(Player.transform);
+    }
+
     public void GameEnded()
     {
         Cursor.visible = true;
