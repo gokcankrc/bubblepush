@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/balls 1.unity
     guid: c640e285cd4730a498f3e0900153171d
-  - enabled: 0
-    path: Assets/Scenes/balls.unity
-    guid: cc1b94442f3d59440b2bce1729d011c8
+  - enabled: 1
+    path: Assets/Scenes/balls column2.unity
+    guid: 6449a44202aa5a74eb0e1c2a3387c56c
   m_configObjects: {}

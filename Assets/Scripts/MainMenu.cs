@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
         yield return null;
         UIManager.I.CloseAllUI();
         GameplayManager.I.Player.Activate();
+        Cursor.visible = false;
     }
 
     private void OnDestroy()
