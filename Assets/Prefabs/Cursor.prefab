@@ -161,8 +161,8 @@ MonoBehaviour:
   AudioSource: {fileID: 0}
   PullRange: 8
   MinRange: 0
-  PullForce: 2
-  MaxPullVelocity: 3
+  PullForce: 10
+  MaxPullVelocity: 8
 --- !u!58 &4233399335243346153
 CircleCollider2D:
   m_ObjectHideFlags: 0
